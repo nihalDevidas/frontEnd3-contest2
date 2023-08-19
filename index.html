@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../frontEnd3-contest2/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+
     <title>list PostOffices</title>
 </head>
 <body>
+    <div class="main-container" id="main">
+        <button id="fetch-btn">Get Started</button>
+    </div>
     
-    <button id="fetch-btn">Get Started</button>
 
-    <div class="ip-con">
+    <div class="ip-con disp">
         <div class="ip-content" id="ipc">
             IP:Adress 123.123.123
         </div>
     </div>
 
-    <div class="container-info">
+    <div class="container-info disp">
         <div class="content">
             <div class="left">
                 <div class="lat" id="lat0">lat:12.12</div>
@@ -34,7 +39,7 @@
         </div>
     </div>
 
-   <div class="map-con">
+   <div class="map-con disp">
     <div class="map-desp">
         <div class="map-title">Your Current Location</div>
         <div class="map-cont" id="mapData">    
@@ -43,7 +48,7 @@
     </div>
    </div>
     
-   <div class="more-info-con">
+   <div class="more-info-con disp">
     <div class="more-con">
         <div class="more-title">More Information About You</div>
         <div class="more-info" id="tdz">Tme Zone</div>
@@ -54,7 +59,7 @@
    </div>
 
 
-   <div class="post-con-main">
+   <div class="post-con-main disp">
         <div class="con">
             <div class="post-title">Post Offices Near You</div>
             <div class="inp-con">

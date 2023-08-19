@@ -6,7 +6,7 @@ let postOffices;
 let currentTime;
 
 const startButton = document.getElementById("fetch-btn");
-//startButton.style.display = "none";
+
 const mapContainer = document.getElementById("mapData");
 const posts = document.getElementById("posts-boxes");
 
@@ -23,6 +23,16 @@ function getSystemIp(){
 }
 
 const fetchData = async()=>{
+
+    document.getElementById("main").remove();
+
+    const elements = Array.from(document.getElementsByClassName("disp"));
+    elements.forEach(ele=>{
+               ele.classList.toggle("disp");
+    });
+    
+
+    
 
     const API =`https://ipinfo.io/${clientIP}/geo`;
 
@@ -41,11 +51,11 @@ startButton.addEventListener('click',fetchData);
 
 
 function displayinformation(){
-    document.getElementById("ipc").innerText = `IP Adress ${data.ip}`;
+    document.getElementById("ipc").innerText = `IP Adress: ${data.ip}`;
     document.getElementById("city0").innerText = `City: ${data.city}`;
     document.getElementById("reg0").innerText = "Country: India";
-    document.getElementById("orgi0").innerText = `$Organisation: ${data.org}`;
-    document.getElementById("hosti").innerText = "Host: N/A";
+    document.getElementById("orgi0").innerText = `Organisation:  ${data.org}`;
+    document.getElementById("hosti").innerText = "Host:  N/A";
 
 
     document.getElementById("tdz").innerText = `Time Zone: ${data.timezone}`;
