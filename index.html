@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../frontEnd3-contest2/index.css">
+    <title>list PostOffices</title>
+</head>
+<body>
+    
+    <button id="fetch-btn">Get Started</button>
+
+    <div class="ip-con">
+        <div class="ip-content" id="ipc">
+            IP:Adress 123.123.123
+        </div>
+    </div>
+
+    <div class="container-info">
+        <div class="content">
+            <div class="left">
+                <div class="lat" id="lat0">lat:12.12</div>
+                <div class="lon" id="log0">long: 34.34</div>
+            </div>
+            <div class="center">
+                <div class="city" id = "city0">city:panaji</div>
+                <div class="region" id="reg0">countyr: goa</div>
+            </div>
+            <div class="right">
+                <div class="org" id="orgi0">organisation: don manigral</div>
+                <div class="hostName" id="hosti">host-name: hosify</div>
+            </div>
+
+        </div>
+    </div>
+
+   <div class="map-con">
+    <div class="map-desp">
+        <div class="map-title">Your Current Location</div>
+        <div class="map-cont" id="mapData">    
+        </div>
+
+    </div>
+   </div>
+    
+   <div class="more-info-con">
+    <div class="more-con">
+        <div class="more-title">More Information About You</div>
+        <div class="more-info" id="tdz">Tme Zone</div>
+        <div class="more-info" id="dt">Date and Time</div>
+        <div class="more-info" id = "pc">Pin-Code</div>
+        <div class="more-info" id="msg">Message</div>
+    </div>
+   </div>
+
+
+   <div class="post-con-main">
+        <div class="con">
+            <div class="post-title">Post Offices Near You</div>
+            <div class="inp-con">
+                <input type="text" class="inp" placeholder="Search By Name">
+            </div>
+            
+            <div class="posts-box" id = "posts-boxes">
+                
+            </div>
+        </div>
+   </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src = "index.js"></script>
+</body>
+</html>
